@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>Koksik | Iza Wysłuch</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <!-- Navbar -->
+    <nav
+      class="
+        top-0
+        absolute
+        z-50
+        w-full
+        flex flex-wrap
+        items-center
+        justify-between
+        px-2
+        py-3
+      "
+    >
+      <div
+        class="
+          container
+          px-4
+          mx-auto
+          flex flex-wrap
+          items-center
+          justify-between
+        "
+      >
+        <div
+          class="
+            w-full
+            relative
+            flex
+            justify-between
+            lg:w-auto
+            lg:static
+            lg:block
+            lg:justify-start
+          "
+        >
+          <div
+            class="
+              text-xl
+              font-bold
+              leading-relaxed
+              inline-block
+              mr-4
+              py-2
+              whitespace-nowrap
+              text-white
+            "
+            href="#"
+          >
+            <b class="text-green-500">Koksik</b>
+            biega
+          </div>
+          <button
+            class="
+              cursor-pointer
+              text-xl
+              leading-none
+              px-3
+              py-1
+              border border-solid border-transparent
+              rounded
+              bg-transparent
+              block
+              lg:hidden
+              outline-none
+              focus:outline-none
+            "
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="
+            lg:flex
+            flex-grow
+            items-center
+            bg-white
+            lg:bg-transparent
+            lg:shadow-none
+            hidden
+          "
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <!-- Icon 1 - facebook -->
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-white
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xs
+                  uppercase
+                  font-bold
+                "
+                href="#pablo"
+                ><i
+                  class="text-green-500 fab fa-facebook text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Udostępnij</span></a
+              >
+            </li>
+            <!-- Icon 2 - instagram -->
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-white
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xs
+                  uppercase
+                  font-bold
+                "
+                href="#pablo"
+                ><i
+                  class="text-green-500 fab fa-instagram text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Obserwuj</span></a
+              >
+            </li>
+            <!-- Icon 3 - xD -->
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-white
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xs
+                  uppercase
+                  font-bold
+                "
+                href="#pablo"
+                ><i class="text-green-500 fab fa-github text-lg leading-lg"></i
+                ><span class="lg:hidden inline-block ml-2">Star</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Area -->
+    <main>
+      <!-- Hero -->
+      <div
+        class="
+          relative
+          pt-16
+          pb-32
+          flex
+          content-center
+          items-center
+          justify-center
+        "
+        style="min-height: 95vh"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style="background-image: url('/assets/img/iza1.jpg')"
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto" data-aos="fade-in">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div>
+                <h1 class="text-white font-semibold text-5xl">
+                  Zanurz się w świecie <b class="text-green-500">OCR</b>
+                </h1>
+                <p class="mt-4 text-lg text-gray-300">
+                  Może jakiś motywujący tekst?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            top-auto
+            bottom-0
+            left-0
+            right-0
+            w-full
+            absolute
+            pointer-events-none
+            overflow-hidden
+          "
+          style="height: 70px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+
+      <!-- About -->
+      <section class="relative py-20 bg-black text-white">
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div
+              class="w-full md:w-4/12 ml-auto mr-auto px-4"
+              data-aos="fade-right"
+            >
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="/assets/img/iza5.jpg"
+              />
+            </div>
+            <div
+              class="w-full md:w-5/12 ml-auto mr-auto px-4"
+              data-aos="fade-left"
+            >
+              <div class="md:pr-12">
+                <small class="text-green-500">Parę słów o mnie</small>
+                <h3 class="text-4xl font-bold uppercase">Jestem Iza :)</h3>
+                <p class="mt-4 text-lg leading-relaxed">
+                  No to proszę... na trzy wiersze :)
+                </p>
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="font-semibold inline-block py-3 mr-3"
+                          ><i class="fas fa-dumbbell fa-2x text-green-500"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-xl">Najlepsza trenerka!</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="font-semibold inline-block py-3 mr-3"
+                          ><i class="fas fa-dumbbell fa-2x text-green-500"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-xl">Najlepsza trenerka!</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="font-semibold inline-block py-3 mr-3"
+                          ><i class="fas fa-dumbbell fa-2x text-green-500"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-xl">Najlepsza trenerka!</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Working with us -->
+      <section class="pb-20 bg-black -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-8
+                  shadow-lg
+                  rounded-lg
+                " data-aos="flip-right"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="
+                      p-3
+                      text-center
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-12
+                      h-12
+                      mb-5
+                      shadow-lg
+                      rounded-full
+                    "
+                  >
+                    <i class="fas fa-award text-green-500"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Wielokrotnie nagradzana</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Divide details about your product or agency work into parts.
+                    A paragraph describing a feature will be enough.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-8
+                  shadow-lg
+                  rounded-lg
+                " data-aos="flip-right"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="
+                      p-3
+                      text-center
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-12
+                      h-12
+                      mb-5
+                      shadow-lg
+                      rounded-full
+                    "
+                  >
+                    <i class="fas fa-retweet text-green-500"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Indywidualne podejście</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Keep you user engaged by providing meaningful information.
+                    Remember that by this time, the user is curious.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-8
+                  shadow-lg
+                  rounded-lg
+                " data-aos="flip-right"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="
+                      p-3
+                      text-center
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-12
+                      h-12
+                      mb-5
+                      shadow-lg
+                      rounded-full
+                    "
+                  >
+                    <i class="fas fa-fingerprint text-green-500"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Profesjonalizm</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Write a few lines about each one. A paragraph describing a
+                    feature will be enough. Keep you user engaged!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center mt-32 text-green-500" >
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="fade-up">
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Zadbaj o swoją formę
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-white"
+              >
+                Don't let your uses guess by attaching tooltips and popoves to
+                any element. Just make sure you enable them first via
+                JavaScript.
+              </p>
+              <p
+                class="
+                  text-lg
+                  font-light
+                  leading-relaxed
+                  mt-0
+                  mb-4
+                  text-white"
+                "
+              >
+                The kit comes with three pre-built pages to help you get started
+                faster. You can change the text and images and you're good to
+                go. Just make sure you enable them first via JavaScript.
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="fade-down">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-6
+                  shadow-lg
+                  rounded-lg
+                  bg-green-500
+                "
+              >
+                <img
+                  alt="..."
+                  src="/assets/img/iza2.jpg"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-green-500 fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    Trening czyni ciało :O 
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                    The Arctic Ocean freezes every winter and much of the
+                    sea-ice then thaws every summer, and that process will
+                    continue whatever happens.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tranier Section -->
+      <section class="pt-20 pb-20">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold uppercase">
+                W czym mogę Ci pomóc?
+              </h2>
+              <p class="text-lg leading-relaxed m-4">
+                According to the National Oceanic and Atmospheric
+                Administration, Ted, Scambos, NSIDClead scentist, puts the
+                potentially record maximum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Header -->
+      <section class="pb-20 relative block bg-black text-white">
+        <div
+          class="
+            bottom-auto
+            top-0
+            left-0
+            right-0
+            w-full
+            absolute
+            pointer-events-none
+            overflow-hidden
+            -mt-20
+          "
+          style="height: 80px"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 pb-20 pt-20">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-white uppercase text-green-500">
+                Napisz do mnie
+              </h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4">
+                Put the potentially record low maximum sea ice extent tihs year
+                down to low ice. According to the National Oceanic and
+                Atmospheric Administration, Ted, Scambos.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap mt-12 justify-center">
+            <div class="w-full lg:w-3/12 px-4 text-center" data-aos="flip-left">
+              <div
+                class="
+                  p-3
+                  w-12
+                  h-12
+                  shadow-lg
+                  rounded-full
+                  inline-flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-medal text-xl text-green-500"></i>
+              </div>
+              <h6 class="text-xl mt-5 font-semibold text-green-500">
+                Plan treningowy
+              </h6>
+              <p class="mt-2 mb-4">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center" data-aos="flip-left">
+              <div
+                class="
+                  p-3
+                  w-12
+                  h-12
+                  shadow-lg
+                  rounded-full
+                  inline-flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-poll text-xl text-green-500"></i>
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-green-500">
+                Poprawa techniki
+              </h5>
+              <p class="mt-2 mb-4">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="w-full lg:w-3/12 px-4 text-center" data-aos="flip-left">
+              <div
+                class="
+                  p-3
+                  w-12
+                  h-12
+                  shadow-lg
+                  rounded-full
+                  inline-flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-lightbulb text-xl text-green-500"></i>
+              </div>
+              <h5 class="text-xl mt-5 font-semibold text-green-500">Motywacja</h5>
+              <p class="mt-2 mb-4">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative bg-green-500 pt-8 pb-6">
+      <div
+        class="
+          bottom-auto
+          top-0
+          left-0
+          right-0
+          w-full
+          absolute
+          pointer-events-none
+          overflow-hidden
+          -mt-20
+        "
+        style="height: 80px"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-green-500 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <div>
+              <button
+                class="
+                  bg-white
+                  text-blue-400
+                  shadow-lg
+                  font-normal
+                  h-10
+                  w-10
+                  items-center
+                  justify-center
+                  align-center
+                  rounded-full
+                  outline-none
+                  focus:outline-none
+                  mr-2
+                  p-3
+                "
+                type="button"
+              >
+                <i class="flex fab fa-twitter text-green-500"></i></button
+              ><button
+                class="
+                  bg-white
+                  text-blue-600
+                  shadow-lg
+                  font-normal
+                  h-10
+                  w-10
+                  items-center
+                  justify-center
+                  align-center
+                  rounded-full
+                  outline-none
+                  focus:outline-none
+                  mr-2
+                  p-3
+                "
+                type="button"
+              >
+                <i
+                  class="flex fab fa-facebook-square text-green-500"
+                ></i></button
+              ><button
+                class="
+                  bg-white
+                  text-pink-400
+                  shadow-lg
+                  font-normal
+                  h-10
+                  w-10
+                  items-center
+                  justify-center
+                  align-center
+                  rounded-full
+                  outline-none
+                  focus:outline-none
+                  mr-2
+                  p-3
+                "
+                type="button"
+              >
+                <i class="flex fab fa-dribbble text-green-500"></i></button
+              ><button
+                class="
+                  bg-white
+                  text-gray-900
+                  shadow-lg
+                  font-normal
+                  h-10
+                  w-10
+                  items-center
+                  justify-center
+                  align-center
+                  rounded-full
+                  outline-none
+                  focus:outline-none
+                  mr-2
+                  p-3
+                "
+                type="button"
+              >
+                <i class="flex fab fa-github text-green-500"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-white" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-white font-semibold py-1">
+              Copyright © 2021 Joanna Kokot
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: true,
+    });
+  </script>
+</html>
